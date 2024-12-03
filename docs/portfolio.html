@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Tatiana Cantu-Gonzalez Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background Container -->
+    <div class="background-container"></div>
+
     <!-- Header Section -->
     <header>
         <div class="logo">
@@ -18,42 +21,28 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="menu-toggle">☰</div>
     </header>
 
-    <!-- White Square with Text -->
-    <div class="background-container">
-        <div class="white-square">
-            <img src="assets/images/—Pngtree—floral_border_frame_8243884.png" class="top-border-image" alt="floral border">
-            <div class="portfolio-wrapper">
-                <h1>Portfolio</h1>
-                <p>Welcome to my portfolio page. Here you can explore my work and projects!</p>
-            </div>
-
-            <!-- Project Grid Section -->
-            <div class="projects">
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="project-box"> <!-- New white box wrapper -->
+            <div class="projects-container">
+                <h2>My Projects</h2>
                 <div class="project-card">
-                    <img src="assets/images/project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>A brief description of the project goes here.</p>
-                    <a href="project1.html" class="btn">View Project</a>
+                    <img src="assets/images/FutureBeauty.png" alt="Project 1">
+                    <h3>Future Beauty</h3>
+                    <p>An interactive choose-your-own-adventure narrative that explores how beauty standards may change in the future.</p>
+                    <a href="https://neha0223.github.io/Speculative_Design_2700/">View Project</a>
                 </div>
                 <div class="project-card">
-                    <img src="assets/images/project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>A brief description of the project goes here.</p>
-                    <a href="project2.html" class="btn">View Project</a>
+                    <img src="assets/images/Dracula.png" alt="Project 2">
+                    <h3>Dracula Chatbot</h3>
+                    <p>A chatbot that makes you think that you are talking to Dracula.</p>
+                    <a href="https://adi2781.github.io/CM-Wrapper-Project/">View Project</a>
                 </div>
-                <div class="project-card">
-                    <img src="assets/images/project3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>A brief description of the project goes here.</p>
-                    <a href="project3.html" class="btn">View Project</a>
-                </div>
-                <!-- Add more projects as needed -->
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
