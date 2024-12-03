@@ -1,0 +1,264 @@
+/* Ensure the body and html take full height */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Full height of the viewport */
+}
+
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the container to 100% of the viewport height */
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;  /* Ensures the image takes the full height of the container */
+    object-fit: cover;  /* Ensures the image covers the container without distortion */
+}
+
+.square-content {
+    text-align: center;
+    width: 50%; /* Adjust width to be a percentage of the white square */
+    padding: 0 20px; /* Optional: add some padding to prevent content from touching the edges */
+}
+
+.square-content h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+}
+
+.square-content p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0; /* Optional: add some space above and below the paragraph */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #AF5149; /* Set a background color */
+    color: white;
+    position: absolute; /* Position the header above the image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 10; /* Ensure the header stays above the image */
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff6347;  /* Tomato color */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu.active ul {
+        display: flex;
+    }
+}
+
+/* Background Image Container */
+.background-container {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 0; /* Align the container to the top of the viewport */
+    left: 0; /* Align the container to the left of the viewport */
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    background-image: url('assets/images/6201171.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image within the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: -1; /* Ensure the background stays behind other content */
+    display: flex;
+    justify-content: center; /* Horizontally center the white square */
+    align-items: center; /* Vertically center the white square */
+}
+
+/* White Square Styling */
+.white-square {
+    position: relative;
+    width: 50vw; /* Adjust width based on viewport */
+    height: 70vh; /* Adjust height based on viewport */
+    max-width: 900px; /* Maximum width */
+    max-height: 800px; /* Maximum height */
+    background-color: #f0f8ff; /* Light blue color (Alice Blue) */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure the square is above the background */
+    overflow: hidden; /* Prevent any part of the image overflowing */
+}
+
+/* Centered Border Image */
+.top-border-image {
+    position: absolute;
+    top: 50%; /* Position the image vertically in the middle */
+    left: 50%; /* Position the image horizontally in the middle */
+    width: 65%; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
+    z-index: 2; /* Ensure the image is above the white square */
+}
+
+/* White Square Content */
+.white-square h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+}
+
+.white-square p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Profile Circle */
+.circle {
+    width: 200px;  /* Diameter of the circle */
+    height: 200px; /* Diameter of the circle */
+    border-radius: 50%; /* Make it a perfect circle */
+    overflow: hidden; /* Crop the image inside */
+    margin: -50px 0 20px 0; /* Move the circle higher by adjusting the top margin */
+    border: 2px solid #333;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 12px;
+    background-color: #AF5149;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6347;  /* Hover effect with tomato color */
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.white-square {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-border-image {
+    width: 100%;
+}
+
+.portfolio-wrapper h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.portfolio-wrapper p {
+    font-size: 18px;
+    color: #555;
+}
